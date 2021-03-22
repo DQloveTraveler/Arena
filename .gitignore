@@ -10,31 +10,32 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
-/Action RPG Music 1.3/
-/Animators/
-/AvatarMask/
-/BGM/
-/Dynamic Sword Animset/
-/EffectExamples/
-/FBXs/
-/Fonts/
-/FourEvilDragonsHP/
-/Free_SpeedTrees/
-/GUI_Parts/
-/HighlightPlus/
-/Knight/
-/KriptoFX/
-/MS_WeaponVol01/
-/NavMeshComponents/
-/Particle Ingredient Pack/
-/Particlecollection_Free samples/
-/Prefabs/
-/RainEntertainment/
-/RPG Character Animation Pack FREE/
-/Sounds/
-/TextMesh Pro/
-/Textures/
-
+/[Rr]ecordings/
+/[Aa]ssets/Action RPG Music 1.3/
+/[Aa]ssets/Animators/
+/[Aa]ssets/AvatarMask/
+/[Aa]ssets/BGM/
+/[Aa]ssets/Dynamic Sword Animset/
+/[Aa]ssets/EffectExamples/
+/[Aa]ssets/FBXs/
+/[Aa]ssets/Fonts/
+/[Aa]ssets/FourEvilDragonsHP/
+/[Aa]ssets/Free_SpeedTrees/
+/[Aa]ssets/GUI_Parts/
+/[Aa]ssets/HighlightPlus/
+/[Aa]ssets/Knight/
+/[Aa]ssets/KriptoFX/
+/[Aa]ssets/MS_WeaponVol01/
+/[Aa]ssets/NavMeshComponents/
+/[Aa]ssets/Particle Ingredient Pack/
+/[Aa]ssets/Particlecollection_Free samples/
+/[Aa]ssets/Prefabs/
+/[Aa]ssets/RainEntertainment/
+/[Aa]ssets/RPG Character Animation Pack FREE/
+/[Aa]ssets/Sounds/
+/[Aa]ssets/TextMesh Pro/
+/[Aa]ssets/Textures/
+/[Aa]ssets/Stage/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta

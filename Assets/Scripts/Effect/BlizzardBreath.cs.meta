@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: d55af584df3f2d94ba18f58d0f74ec19
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - freezeEffect: {fileID: 1213391687518025901, guid: 05b52f7160fca804f9beeea8668d37a6,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

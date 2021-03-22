@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995f41bcc019dc349816750fdbf7b3ce, type: 3}
+  m_Name: SPPotionNormal
+  m_EditorClassIdentifier: 
+  itemName: "\u30B9\u30BF\u30DF\u30CA\u85AC"
+  itemImage: {fileID: 21300000, guid: 94e3694444078e34aa110d75e5ba92b7, type: 3}
+  maxNum: 3
+  usingEffect: {fileID: 7417747495067754689, guid: db69fa30cff581b4eb8dfcbbc3cb9618,
+    type: 3}
+  effectTime: 30
