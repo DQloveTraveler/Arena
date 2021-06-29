@@ -17,27 +17,6 @@ public class GroundDragon : Enemy, IDamageable
     private const float stoppingDistance_Attack4 = 10;
 
     private enum AudioEnum { FootStep, Bite, Swing, Slide, Rush, Roar}
-    [System.Serializable]
-    private class AudioPlayer
-    {
-        [SerializeField] private AudioSet<AudioEnum>[] audios;
-        private Dictionary<AudioEnum, AudioSource> audioDic = new Dictionary<AudioEnum, AudioSource>();
-        public Dictionary<AudioEnum, AudioSource> audioSources => audioDic;
-
-        public void Init()
-        {
-            foreach (var a in audios)
-            {
-                audioDic.Add(a.Name, a.Source);
-            }
-        }
-
-        public void Play(AudioEnum name)
-        {
-            var AS = audioDic[name];
-            AS.PlayOneShot(AS.clip);
-        }
-    }
 
     #endregion
 
@@ -47,7 +26,7 @@ public class GroundDragon : Enemy, IDamageable
     [SerializeField]
     private GameObject damageEffect;
     [SerializeField]
-    private AudioPlayer audioPlayer = null;
+    private AudioPlayer<AudioEnum> audioPlayer = null;
     #endregion
 
     #region private field

@@ -21,7 +21,6 @@ public class BlizzardDragon : Enemy, IDamageable
     private const float stoppingDistance_Attack6 = 6.5f;
     private const float stoppingDistance_Attack7 = 6;
 
-
     [System.Serializable]
     private class Effects
     {
@@ -30,35 +29,13 @@ public class BlizzardDragon : Enemy, IDamageable
     }
 
     private enum AudioEnum { FootStep, Bite, Swing, Slide, Impact, Bark_A, Bark_B, Wing }
-    [System.Serializable]
-    private class AudioPlayer
-    {
-        [SerializeField] private AudioSet<AudioEnum>[] audios;
-        private Dictionary<AudioEnum, AudioSource> audioDic = new Dictionary<AudioEnum, AudioSource>();
-        public Dictionary<AudioEnum, AudioSource> audioSources => audioDic;
-
-        public void Init()
-        {
-            foreach (var a in audios)
-            {
-                audioDic.Add(a.Name, a.Source);
-            }
-        }
-
-        public void Play(AudioEnum name)
-        {
-            var AS = audioDic[name];
-            AS.PlayOneShot(AS.clip);
-        }
-    }
-
     #endregion
 
     #region serialize field
     [SerializeField]
     private Effects effects;
     [SerializeField]
-    private AudioPlayer audioPlayer;
+    private AudioPlayer<AudioEnum> audioPlayer;
     #endregion
 
     #region property

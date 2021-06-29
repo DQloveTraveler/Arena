@@ -11,6 +11,29 @@ public abstract class Enemy : MonoBehaviour
     protected enum LargeState { Default, Flying, Dead }
     protected enum MiddleState { Default, Attack1, Attack2, Attack3, Attack4, Attack5, Attack6, Attack7, Break, Animating }
     protected enum SmallState { Default, Leave, Chase, Search, Attack }
+
+    [System.Serializable]
+    protected class AudioPlayer<T>
+    {
+        [SerializeField] private AudioSet<T>[] audios;
+        private Dictionary<T, AudioSource> audioDic = new Dictionary<T, AudioSource>();
+        public Dictionary<T, AudioSource> audioSources => audioDic;
+
+        public void Init()
+        {
+            foreach (var a in audios)
+            {
+                audioDic.Add(a.Name, a.Source);
+            }
+        }
+
+        public void Play(T name)
+        {
+            var AS = audioDic[name];
+            AS.PlayOneShot(AS.clip);
+        }
+    }
+
     #endregion
 
     #region serialize field

@@ -41,7 +41,6 @@ public class PlayerBehaviour : MonoBehaviour, IDamageable
     #endregion
 
 
-
     #region unity function
     void Awake()
     {
